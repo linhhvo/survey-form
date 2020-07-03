@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <div class="heading">
+    <h1 id="title">Fancy Hotel Survey Form</h1>
+    <p id="description">How are we doing?</p>
+  </div>
+  <div class="container">
+
+    <form id="survey-form" action="/submit-feedback">
+      <label class="space" id="name-label" for="name">Name</label><br>
+      <input class="border" id="name" type="text" placeholder="Enter your name" required>
+
+      <label class="space" id="email-label" for="email">Email</label>
+      <input class="border" id="email" type="email" placeholder="Enter your email" required>
+
+      <label class="space" for="dropdown">What city did you stay in?</label>
+      <select class="border" id="dropdown" required>
+        <option>Boston, MA</option>
+        <option>Seattle, WA</option>
+        <option>New York, NY</option>
+        <option>San Francisco, CA</option>
+      </select>
+
+      <label class="space" id="number-label" for="number">How long did you stay?</label>
+      <input class="border" id="number" type="number" min="1" max="31" placeholder="Enter your length of stay" required>
+
+      <label class="space">Would you view Fancy Hotel as:</label>
+      <div>
+        <input type="radio" name="rating" id="budget" value="budget">
+        <label for="budget">Budget hotel</label>
+      </div>
+      <div>
+        <input type="radio" name="rating" id="midscale" value="midscale">
+        <label for="midscale">Midscale hotel</label>
+      </div>
+      <div>
+        <input type="radio" name="rating" id="luxurious" value="luxurious">
+        <label for="luxurious">Luxurious hotel</label>
+      </div>
+
+      <label class="space">What should we improve?</label>
+      <div>
+        <input type="checkbox" name="features" id="amenities" value="amenities">
+        <label for="amenities">Amenities</label>
+      </div>
+      <div>
+        <input type="checkbox" name="features" id="checkins" value="checkins">
+        <label for="checkins">Check-in & Check-out</label>
+      </div>
+      <div>
+        <input type="checkbox" name="features" id="roomservice" value="luxurious">
+        <label for="roomservice">Room service</label>
+      </div>
+      <div>
+        <input type="checkbox" name="features" id="security" value="security">
+        <label for="security">Security</label>
+      </div>
+      <div>
+        <input type="checkbox" name="features" id="food" value="food">
+        <label for="food">Food</label>
+      </div>
+
+      <label class="space" for="comments">Tell us a little more...</label>
+      <textarea class="border" rows="10" cols="auto" name="comments" placeholder="Share your experience with us. What went well? What could have gone better?"></textarea>
+
+      <button id="submit" type="submit">Submit Feedback</button>
+
+    </form>
+  </div>
+</body>
+
+</html>

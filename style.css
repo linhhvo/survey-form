@@ -1,0 +1,71 @@
+body {
+  background: url(https://wallpaperaccess.com/full/185289.jpg) no-repeat center fixed;
+  background-size: cover;
+  font-family: sans-serif;
+  line-height: 1.3;
+}
+
+.heading {
+  text-align: center;
+  color: #342d2c;
+  padding-top: 50px;
+}
+
+#description {
+  font-size: 20px;
+  font-style: italic;
+  margin-top: -15px;
+}
+
+.container {
+  display: block;
+  background: #554e44;
+  opacity: 0.9;
+  margin: 10px auto;
+  padding: 30px 60px 60px;
+  border-radius: 2em;
+}
+
+@media (min-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 20px 10px;
+  }
+}
+
+div.container form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.space {
+  padding: 25px 0px 5px;
+}
+
+#submit {
+  margin-top: 25px;
+  padding: 15px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.border {
+  border-radius: 0.35em;
+}
+
+button {
+  background: #3e6588;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
